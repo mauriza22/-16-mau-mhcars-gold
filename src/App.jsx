@@ -1,6 +1,6 @@
 /** @format */
 
-import './App.css';
+import './assets/css/index.css';
 
 function App() {
   return (
