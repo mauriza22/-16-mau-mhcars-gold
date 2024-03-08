@@ -9,23 +9,23 @@ const Faq = () => {
       </div>
       <ul className="section-list-faq">
         <li className="box-list-faq">
-          <span>Apa saja syarat yang dibutuhkan?</span>
+          <span className="faq-title">Apa saja syarat yang dibutuhkan?</span>
           <i className="fa fa-chevron-down"></i>
         </li>
         <li className="box-list-faq">
-          <span>Berapa hari minimal sewa mobil lepas kunci?</span>
+          <span className="faq-title">Berapa hari minimal sewa mobil lepas kunci?</span>
           <i className="fa fa-chevron-down"></i>
         </li>
         <li className="box-list-faq">
-          <span>Berapa hari sebelumnya sabaiknya booking sewa mobil?</span>
+          <span className="faq-title">Berapa hari sebelumnya sabaiknya booking sewa mobil?</span>
           <i className="fa fa-chevron-down"></i>
         </li>
         <li className="box-list-faq">
-          <span>Apakah Ada biaya antar-jemput?</span>
+          <span className="faq-title">Apakah Ada biaya antar-jemput?</span>
           <i className="fa fa-chevron-down"></i>
         </li>
         <li className="box-list-faq">
-          <span>Bagaimana jika terjadi kecelakaan</span>
+          <span className="faq-title">Bagaimana jika terjadi kecelakaan</span>
           <i className="fa fa-chevron-down"></i>
         </li>
       </ul>

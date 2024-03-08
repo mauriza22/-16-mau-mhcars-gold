@@ -15,10 +15,10 @@ const Footer = () => {
         <p>081-233-334-808</p>
       </div>
       <div className="footer-services">
-        <p>Our Services</p>
-        <p>Why Us</p>
-        <p>Testimonial</p>
-        <p>FAQ</p>
+        <p className="footer-service-list">Our Services</p>
+        <p className="footer-service-list">Why Us</p>
+        <p className="footer-service-list">Testimonial</p>
+        <p className="footer-service-list">FAQ</p>
       </div>
       <div className="footer-icon">
         <p>Connect with us</p>

@@ -1,7 +1,10 @@
-import Layout from "./layout"
+/** @format */
+
+// import Layout from "./layout"
+import Home from './pages/home';
 
 const App = () => {
-  return (<Layout />)
-}
+  return <Home />;
+};
 
-export default App
+export default App;

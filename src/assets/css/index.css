@@ -30,6 +30,7 @@ body {
 
 .header-banner {
   background-color: #f1f3ff;
+  padding-left: 2rem;
 }
 
 .header-nav {
@@ -69,11 +70,12 @@ li > a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .car-banner {
   /* max-inline-size: 100%; */
   block-size: auto;
+  /* width: 44rem; */
 }
 .hero-banner-car-grid {
   max-width: 704px;
@@ -92,13 +94,15 @@ li > a:hover {
 .hero-title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 54px;
+  line-height: 47px;
+  width: 568px;
+  margin-bottom: 11px;
 }
 .hero-paragraph {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
-  max-width: 468;
+  width: 468px;
 }
 
 .hero-btn-banner {
@@ -131,6 +135,9 @@ li > a:hover {
   font-weight: 700;
 }
 
+.section-infomation-list {
+  width: 468px;
+}
 .section-service-paragraph {
   font-size: 14px;
   line-height: 20px;
@@ -177,14 +184,18 @@ li > a:hover {
 .section-box-whyu-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .section-whyus-title {
   margin: 0;
+  font-size: 24px;
 }
+
 .section-whyus-paragraph {
   margin: 0;
+  font-size: 14px;
+  margin-bottom: 18px;
 }
 .carousel {
   padding-top: 6rem;
@@ -194,8 +205,8 @@ li > a:hover {
   border-radius: 8px;
   background-color: #f1f3ff;
   padding: 4rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   width: 619px;
 }
 
@@ -204,7 +215,7 @@ li > a:hover {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
 }
 .section-carousel-title,
@@ -220,7 +231,7 @@ h2 {
 .section-content-text {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 8px;
 }
 
 .section-content-text,
@@ -305,6 +316,10 @@ p {
   flex-direction: column;
   border-radius: 13px;
 }
+
+.sewa-title {
+  font-size: 36px;
+}
 .btn-center {
   margin-top: 8px;
   display: flex;
@@ -330,6 +345,12 @@ h2 {
   display: grid;
   grid-template-columns: 2fr 3fr;
   padding-top: 6rem;
+  gap: 2rem;
+}
+
+.section-title-faq,
+h2 {
+  font-size: 24px;
 }
 .section-list-faq {
   display: flex;
@@ -346,6 +367,14 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
+
+.faq-title {
+  font-size: 14px;
+}
+
+.footer-service-list {
+  font-weight: 400;
+}
 .section-title-faq {
   display: flex;
   flex-direction: column;
@@ -356,7 +385,7 @@ footer,
   display: grid;
   gap: 5rem;
   margin-bottom: 6rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr 2fr;
 }
 
 .footer-address {
@@ -447,12 +476,24 @@ span {
     position: relative;
   }
   .container {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 7rem;
+    padding-right: 11rem;
   }
   .hero-banner-car {
     position: absolute;
     /* right: auto; */
+  }
+  .section-service-title {
+    margin-bottom: 1rem;
+  }
+
+  .section-information-list {
+    width: 458px;
+  }
+
+  .section-whyus-title {
+    margin: 0;
+    font-size: 24px;
   }
   .section-whyus-grid {
     display: grid;
@@ -702,10 +743,11 @@ span {
     flex-direction: column;
     text-align: center;
     line-height: 39px;
+    width: 368px;
   }
   .section-title-faq,
   h2 {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 33px;
   }
   .section-title-faq {

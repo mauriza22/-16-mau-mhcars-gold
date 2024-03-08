@@ -4,7 +4,7 @@ const StartRent = () => {
   return (
     <section className="container section-sewa-mobil">
       <div className="section-card-sewa-mobil">
-        <h2>Sewa Mobil di (Lokasimu) Sekarang</h2>
+        <h2 className="sewa-title">Sewa Mobil di (Lokasimu) Sekarang</h2>
         <div className="pargraph-text-block">
           <p className="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
