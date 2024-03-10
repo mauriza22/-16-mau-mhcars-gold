@@ -7,6 +7,7 @@ import Testimonial from '../layout/layout.testimonial';
 import WhyUs from '../layout/layout.whyus';
 import Faq from '../layout/layout.faq';
 import Footer from '../layout/layout.footer';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const Home = () => {
   return (

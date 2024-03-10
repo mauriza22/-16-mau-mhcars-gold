@@ -1,26 +1,34 @@
 /** @format */
-// import CardFind from '../layout/layout.card.find';
 import CarBanner from '../assets/images/binar.car.banner.png';
 import Button from '../components/Button';
+import { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
+
 const urlLink = [
   {
-    link: '#',
+    link: '/our-services',
     navName: 'Our Services',
   },
   {
-    link: '#',
+    link: '/why-us',
     navName: 'Why Us',
   },
   {
-    link: '#',
+    link: '/testimonial',
     navName: 'Testimonials',
   },
   {
-    link: '#',
+    link: '/faq',
     navName: 'FAQ',
   },
 ];
 export const Header = () => {
+  const [open, setopen] = useState(false); //tutup
+
+  //open false
+  const toggle = () => {
+    setopen(!open);
+  };
   return (
     <header className="container header-banner">
       <div className="header-nav">
@@ -31,16 +39,28 @@ export const Header = () => {
           ))}
         </ul>
         <div className="btn-responsive">
-          <button id="btn-open" className="btn-menu">
+          <button onClick={toggle} type="button" className="btn-menu">
             <i className="fa fa-bars"></i>
           </button>
-          <div id="toggle" type="button" className="responsive-nav">
-            <ul className="navbar">
-              {urlLink?.map((item, index) => (
-                <li key={index}>{item?.navName}</li>
-              ))}
-            </ul>
-          </div>
+          {open && (
+            <CSSTransition in={open} timeout={200} classNames="responsive-nav" unmountOnExit>
+              <div id="toggle" className="responsive-nav">
+                <ul className="navbar">
+                  <li>
+                    <div style={{ display: 'flex', gap: '5rem', alignItems: 'center' }}>
+                      <span> BCR</span>
+                      <button onClick={toggle} style={{ border: 0, background: 'white', fontSize: 24 }}>
+                        <i className="fa fa-times"></i>
+                      </button>
+                    </div>
+                  </li>
+                  {urlLink?.map((item, index) => (
+                    <li key={index}>{item?.navName}</li>
+                  ))}
+                </ul>
+              </div>
+            </CSSTransition>
+          )}
         </div>
       </div>
 
