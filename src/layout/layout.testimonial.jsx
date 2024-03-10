@@ -1,6 +1,6 @@
 /** @format */
 import testiMale from '../assets/images/binar.user.testi.male.png';
-// import testiFemale from '../assets/images/binar.user.testi.female.png';
+import testiFemale from '../assets/images/binar.user.testi.female.png';
 import ic_star from '../assets/images/binar.star.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useEffect, useState } from 'react';
@@ -13,7 +13,7 @@ const testimoni = [
     nama: 'John Dee',
   },
   {
-    img: testiMale,
+    img: testiFemale,
     description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"`,
     nama: 'John Dee',
   },
@@ -23,7 +23,7 @@ const testimoni = [
     nama: 'John Dee',
   },
   {
-    img: testiMale,
+    img: testiFemale,
     description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"`,
     nama: 'John Dee',
   },
@@ -33,7 +33,7 @@ const testimoni = [
     nama: 'John Dee',
   },
   {
-    img: testiMale,
+    img: testiFemale,
     description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"`,
     nama: 'John Dee',
   },
@@ -43,7 +43,7 @@ const testimoni = [
     nama: 'John Dee',
   },
   {
-    img: testiMale,
+    img: testiFemale,
     description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"`,
     nama: 'John Dee',
   },
@@ -53,7 +53,7 @@ const testimoni = [
     nama: 'John Dee',
   },
   {
-    img: testiMale,
+    img: testiFemale,
     description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"`,
     nama: 'John Dee',
   },
@@ -88,7 +88,7 @@ const Testimonial = () => {
                         <img src={ic_star} />
                       </div>
                       <p>{item?.description}</p>
-                      <p className="text-carousel">{item?.nama}32, Bromo</p>
+                      <p className="text-carousel">{item?.nama} 32, Bromo</p>
                     </div>
                   </div>
                 </div>
@@ -97,67 +97,6 @@ const Testimonial = () => {
           );
         })}
       </Swiper>
-
-      {/*  <div className="section-box">
-       <div className="section-carousel">
-          <div className="section-carousel-box">
-            <div className="section-carousel-component">
-              <img src={testiMale} alt="human-pic" />
-              <div className="section-content-text">
-                <div>
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                </div>
-                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                <p className="text-carousel">John Dee 32, Bromo</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="section-carousel">
-          <div className="section-carousel-box">
-            <div className="section-carousel-component">
-              <img src={testiMale} />
-              <div className="section-content-text">
-                <div>
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                </div>
-                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                <p className="text-carousel">John Dee 32, Bromo</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="section-carousel">
-          <div className="section-carousel-box">
-            <div className="section-carousel-component">
-              <img src={testiFemale} alt="human-pic" />
-              <div className="section-content-text">
-                <div>
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                  <img src={ic_star} />
-                </div>
-                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                <p className="text-carousel">John Dee 32, Bromo</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-       */}
       <div className="carousel-nav">
         <span className="icon-left">
           <i className="fa fa-chevron-left"></i>
