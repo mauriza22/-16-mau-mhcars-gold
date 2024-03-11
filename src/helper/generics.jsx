@@ -1,3 +1,5 @@
+/** @format */
+
 export const toUpperCased = (string) => {
-    return string.toUpperCase();
-}
+  return string.toUpperCase();
+};

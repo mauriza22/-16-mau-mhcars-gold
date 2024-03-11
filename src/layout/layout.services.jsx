@@ -28,12 +28,12 @@ const listItem = [
 const Services = () => {
   return (
     <section className="container">
-      <div className="section-services">
+      <div id="our-services" className="section-services">
         <div className="section-service-image">
           <img className="section-service-banner" src={userService} alt="introduction-pict" />
         </div>
         <div className="section-information-list">
-          <h2 className="section-service-title">Best Car Rental for any kind of trip in (Lokasimu)!</h2>
+          <h2 className="section-service-title">Best Car Rental for any kind of trip in Banda Aceh!</h2>
           <p className="section-service-paragraph">
             Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.
           </p>

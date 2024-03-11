@@ -67,7 +67,7 @@ const Testimonial = () => {
 
   return (
     <section className="carousel">
-      <div className="section-carousel-title">
+      <div id="testimonial" className="section-carousel-title">
         <h2>Testimonial</h2>
         <p>Berbagai review positif dari para pelanggan kami</p>
       </div>

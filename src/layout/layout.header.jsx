@@ -6,19 +6,19 @@ import { CSSTransition } from 'react-transition-group';
 
 const urlLink = [
   {
-    link: '/our-services',
+    link: '#our-services',
     navName: 'Our Services',
   },
   {
-    link: '/why-us',
+    link: '#why-us',
     navName: 'Why Us',
   },
   {
-    link: '/testimonial',
+    link: '#testimonial',
     navName: 'Testimonials',
   },
   {
-    link: '/faq',
+    link: '#faq',
     navName: 'FAQ',
   },
 ];
@@ -35,7 +35,9 @@ export const Header = () => {
         <div className="header-logo"></div>
         <ul className="header-navlink">
           {urlLink?.map((item, index) => (
-            <li key={index}>{item?.navName}</li>
+            <li key={index}>
+              <a href={item?.link}>{item?.navName}</a>
+            </li>
           ))}
         </ul>
         <div className="btn-responsive">
@@ -55,7 +57,9 @@ export const Header = () => {
                     </div>
                   </li>
                   {urlLink?.map((item, index) => (
-                    <li key={index}>{item?.navName}</li>
+                    <li key={index}>
+                      <a href={item?.link}>{item?.navName}</a>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -66,7 +70,7 @@ export const Header = () => {
 
       <div className="hero-banner">
         <div>
-          <h1 className="hero-title">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+          <h1 className="hero-title">Sewa & Rental Mobil Terbaik di kawasan Banda Aceh!</h1>
           <p className="hero-paragraph">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
           <div className="btn-mulai-sewa">
             <Button type="button" id="change-color" className="hero-btn-banner">
